@@ -598,3 +598,17 @@ footer {
   line-height: 1.3;
   font-family: 'Inter', sans-serif;
 }
+
+.info-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-line h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Inter', sans-serif;
+}
