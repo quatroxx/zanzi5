@@ -575,17 +575,22 @@ footer {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.2px;
-  line-height: 1.4;
+  line-height: 1.3;
   color: #111;
-  padding: 6px 12px;
+  padding: 4px 0 2px 0; /* üst:4px, alt:2px, sağ-sol:0 */
+  text-align: left;
   font-family: 'Inter', sans-serif;
 }
+
 .product-card p {
   font-weight: 300;
   font-size: 13px;
   letter-spacing: 0.1px;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #111;
-  padding: 4px 12px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
   font-family: 'Inter', sans-serif;
 }
+
