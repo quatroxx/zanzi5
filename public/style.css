@@ -575,8 +575,8 @@ footer {
 .product-card p {
   text-align: left;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.0;
   font-family: 'Inter', sans-serif;
-  padding: 6px 3px;
+  padding: 1px 1px;
 }
 
