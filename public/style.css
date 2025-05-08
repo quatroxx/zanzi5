@@ -255,19 +255,19 @@ main {
 }
 
 .product-info {
-  padding: 10px;
+  padding: 4px;
   text-align: left;
 }
 
 .product-info h2 {
   font-size: 14px;
   font-weight: 300;
-  margin: 5px 0 3px;
+  margin: 3px 0 3px;
   letter-spacing: 0;
   color: #111;
   text-decoration: none;
   text-transform: none;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .product-info .price {
