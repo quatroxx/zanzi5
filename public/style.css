@@ -569,6 +569,6 @@ footer {
   border-color: #e63946;
 }
 .lookbook {
-  padding: 1px;
+  padding: 0 1px; /* üst-alt 0px, sağ-sol 1px */
 }
 
