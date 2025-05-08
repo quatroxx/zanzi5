@@ -615,3 +615,19 @@ footer {
 .favorite-icon .heart:hover path {
   fill: #ffe0e0;
 }
+.favorite-icon .heart {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.favorite-icon .heart:hover {
+  transform: scale(1.2);
+  stroke: #E63946;
+}
+
+.favorite-icon.active .heart path {
+  fill: #E63946;
+  stroke: #E63946;
+}
