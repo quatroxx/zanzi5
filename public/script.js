@@ -229,3 +229,19 @@ card.innerHTML = `
   .catch(err => {
     console.error("Ürünler yüklenemedi:", err);
   });
+card.querySelector(".prev").addEventListener("click", () => {
+  const slider = card.querySelector(".slider");
+  const offset = parseInt(slider.dataset.offset) || 0;
+  const newOffset = Math.max(0, offset - 1);
+  slider.style.transform = `translateX(-${newOffset * 100}%)`;
+  slider.dataset.offset = newOffset;
+});
+
+card.querySelector(".next").addEventListener("click", () => {
+  const slider = card.querySelector(".slider");
+  const total = product.images.length;
+  const offset = parseInt(slider.dataset.offset) || 0;
+  const newOffset = Math.min(total - 1, offset + 1);
+  slider.style.transform = `translateX(-${newOffset * 100}%)`;
+  slider.dataset.offset = newOffset;
+});
