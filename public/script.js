@@ -186,7 +186,7 @@ function submitAuth() {
   alert("Henüz arka uç (backend) hazır değil 🙃");
 }
 // Ürünleri dinamik olarak yükle
-fetch("products.json")
+fetch("./products.json")
   .then(res => res.json())
   .then(products => {
     const lookbook = document.querySelector(".lookbook");
