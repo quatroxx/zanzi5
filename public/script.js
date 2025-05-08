@@ -200,11 +200,11 @@ fetch("/products.json")
     card.innerHTML = `
       <div class="slider-container">
         <div class="slider" data-offset="0">
-          ${product.images.map(img => `
-            <div class="slide-item">
-              <img src="${img}" alt="${product.title}" loading="lazy">
-            </div>
-          `).join('')}
+         ${product.images.map(img => img ? `
+  <div class="slide-item">
+    <img src="${img}" alt="${product.title}" loading="lazy">
+  </div>
+` : '').join('')}
         </div>
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
