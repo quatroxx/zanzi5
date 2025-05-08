@@ -177,7 +177,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1px;
   row-gap: 80px;
-  padding: 40px;
+  padding: 1px;
 }
 
 /* Slider yapısı */
@@ -569,7 +569,9 @@ footer {
   color: #e63946;
   border-color: #e63946;
 }
-
+.lookbook {
+  padding: 40px;
+}
 
 
 
