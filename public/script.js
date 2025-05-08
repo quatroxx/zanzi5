@@ -224,8 +224,9 @@ fetch("/products.json")
 
     // Sağ-sol buton fonksiyonları
     const slider = card.querySelector(".slider");
-    let offset = 0;
-    const total = product.images.length;
+const slideCount = product.images.length;
+slider.style.width = `${slideCount * 100}%`; // 2 görsel varsa 200%, 3 ise 300%
+
 
     card.querySelector(".prev").addEventListener("click", () => {
       offset = Math.max(0, offset - 1);
