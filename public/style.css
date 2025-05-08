@@ -571,4 +571,10 @@ footer {
 .lookbook {
   padding: 0 1px; /* üst-alt 0px, sağ-sol 1px */
 }
+.product-card h3,
+.product-card p {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  padding: 4px 0;
+}
 
