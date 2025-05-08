@@ -205,6 +205,8 @@ card.innerHTML = `
         </div>
       `).join('')}
     </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
   </div>
   <div class="product-info">
     <div class="info-line">
@@ -218,6 +220,7 @@ card.innerHTML = `
     <p>${product.price} TL</p>
   </div>
 `;
+
 
 
       lookbook.appendChild(card);
