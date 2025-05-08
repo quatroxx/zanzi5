@@ -1,0 +1,27 @@
+/* Genel */
+@font-face {
+  font-family: 'Northwood High';
+  src: url('fonts/Northwood High.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+...
+.lookbook {
+  padding: 0 1px; /* üst-alt 0px, sağ-sol 1px */
+}
+
+
+.product-card h3,
+.product-card p {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  padding: 4px 0;
+}
