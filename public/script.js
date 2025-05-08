@@ -197,18 +197,21 @@ fetch("/products.json")
       card.className = "product-card fade-in visible";
 
       card.innerHTML = `
-        <div class="slider-container">
-          <div class="slider" data-offset="0">
-            ${product.images.map(img => `
-              <div class="slide-item">
-                <img src="${img}" alt="${product.title}" loading="lazy">
-              </div>
-            `).join('')}
-          </div>
+  <div class="slider-container">
+    <div class="slider" data-offset="0">
+      ${product.images.map(img => `
+        <div class="slide-item">
+          <img src="${img}" alt="${product.title}" loading="lazy">
         </div>
-        <h3>${product.title}</h3>
-        <p>${product.price} TL</p>
-      `;
+      `).join('')}
+    </div>
+  </div>
+  <div class="product-info">
+    <h3>${product.title}</h3>
+    <p>${product.price} TL</p>
+  </div>
+`;
+
 
       lookbook.appendChild(card);
     });
