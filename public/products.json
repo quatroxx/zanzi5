@@ -1,0 +1,52 @@
+[
+  {
+    "title":"Beyaz Elbise",
+    "price":499,
+    "images":[
+      "images\/beyaz1.jpg",
+      "images\/beyaz2.jpg",
+      "images\/beyaz3.jpg"
+    ],
+    "url":"beyaz.html",
+    "badge":"yeni"
+  },
+  {
+    "title":"Kahverengi Ceket",
+    "price":899,
+    "images":[
+      "images\/ceket1.jpg",
+      "images\/ceket2.jpg"
+    ],
+    "url":"ceket.html",
+    "badge":null
+  },
+  {
+    "title":"Çiçekli Bluz",
+    "price":379,
+    "images":[
+      "images\/cicek1.jpg",
+      "images\/cicek2.jpg",
+      "images\/cicek3.jpg"
+    ],
+    "url":"cicekli.html",
+    "badge":"indirim"
+  },
+  {
+    "title":"Bitter Takım",
+    "price":1099,
+    "images":[
+      "images\/bitter1.jpg"
+    ],
+    "url":"bitter.html",
+    "badge":null
+  },
+  {
+    "title":"Klasik Kahve Gömlek",
+    "price":599,
+    "images":[
+      "images\/kahve1.jpg"
+    ],
+    "url":"kahvegomlek.html",
+    "badge":"yeni"
+  }
+]
