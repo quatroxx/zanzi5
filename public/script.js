@@ -196,53 +196,30 @@ fetch("/products.json")
       const card = document.createElement("div");
       card.className = "product-card fade-in visible";
 
-
-    card.innerHTML = `
-      <div class="slider-container">
-        <div class="slider" data-offset="0">
-         ${product.images.map(img => img ? `
-  <div class="slide-item">
-    <img src="${img}" alt="${product.title}" loading="lazy">
+card.innerHTML = `
+  <div class="slider-container">
+    <div class="slider" data-offset="0">
+      ${product.images.map(img => `
+        <div class="slide-item">
+          <img src="${img}" alt="${product.title}" loading="lazy">
+        </div>
+      `).join('')}
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
   </div>
-` : '').join('')}
-        </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+  <div class="product-info">
+    <div class="info-line">
+      <h3>${product.title}</h3>
+      <div class="favorite-icon" onclick="toggleFavorite(this)">
+        <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.8 4.6c-1.5-1.4-4-1.4-5.5 0l-1.3 1.3-1.3-1.3c-1.5-1.4-4-1.4-5.5 0s-1.5 3.7 0 5.1l6.8 6.7 6.8-6.7c1.5-1.4 1.5-3.7 0-5.1z"/>
+        </svg>
       </div>
-      <div class="product-info">
-        <div class="info-line">
-          <h3>${product.title}</h3>
-          <div class="favorite-icon" onclick="toggleFavorite(this)">
-            <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.8 4.6c-1.5-1.4-4-1.4-5.5 0l-1.3 1.3-1.3-1.3c-1.5-1.4-4-1.4-5.5 0s-1.5 3.7 0 5.1l6.8 6.7 6.8-6.7c1.5-1.4 1.5-3.7 0-5.1z"/>
-            </svg>
-          </div>
-        </div>
-        <p>${product.price} TL</p>
-      </div>
-    `;
-    const slider = card.querySelector(".slider");
-    const slideCount = product.images.length;
-    slider.style.width = `${slideCount * 100}%`;
-
-    // Sağ-sol buton fonksiyonları
-    const slider = card.querySelector(".slider");
-const slideCount = product.images.length;
-slider.style.width = `${slideCount * 100}%`; // 2 görsel varsa 200%, 3 ise 300%
-
-
-    card.querySelector(".prev").addEventListener("click", () => {
-      offset = Math.max(0, offset - 1);
-      slider.style.transform = `translateX(-${offset * 100}%)`;
-      slider.dataset.offset = offset;
-    });
-
-    card.querySelector(".next").addEventListener("click", () => {
-      offset = Math.min(total - 1, offset + 1);
-      slider.style.transform = `translateX(-${offset * 100}%)`;
-      slider.dataset.offset = offset;
-    });
-
+    </div>
+    <p>${product.price} TL</p>
+  </div>
+`;
 
 
 
