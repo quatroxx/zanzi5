@@ -197,7 +197,7 @@ fetch("./products.json")
 
       card.innerHTML = `
         <div class="slider-container">
-          ${product.badge ? `<div class="badge">${product.badge}</div>` : ""}
+         
           <div class="slider" data-offset="0">
             ${product.images.map(img => `
               <div class="slide-item">
