@@ -255,11 +255,22 @@ main {
 }
 
 .product-info {
-  padding-top: 4px;
+  padding-top: 6px;
   padding-left: 4px;
   text-align: left;
 }
-
+.info-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-line h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Inter', sans-serif;
+}
 .product-info h2 {
   font-size: 14px;
   font-weight: 300;
