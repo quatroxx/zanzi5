@@ -196,7 +196,7 @@ fetch("/products.json")
       const card = document.createElement("div");
       card.className = "product-card fade-in visible";
 
-     card.innerHTML = `
+    card.innerHTML = `
   <div class="slider-container">
     <div class="slider" data-offset="0">
       ${product.images.map(img => `
@@ -207,14 +207,18 @@ fetch("/products.json")
     </div>
   </div>
   <div class="product-info">
-    <div class="info-top">
-      <div></div> <!-- soldaki boşluk için -->
+    <div class="info-line">
+      <h3>${product.title}</h3>
       <div class="favorite-icon" onclick="toggleFavorite(this)">
         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M20.8 4.6c-1.5-1.4-4-1.4-5.5 0l-1.3 1.3-1.3-1.3c-1.5-1.4-4-1.4-5.5 0s-1.5 3.7 0 5.1l6.8 6.7 6.8-6.7c1.5-1.4 1.5-3.7 0-5.1z"/>
-  </svg>
+          <path d="M20.8 4.6c-1.5-1.4-4-1.4-5.5 0l-1.3 1.3-1.3-1.3c-1.5-1.4-4-1.4-5.5 0s-1.5 3.7 0 5.1l6.8 6.7 6.8-6.7c1.5-1.4 1.5-3.7 0-5.1z"/>
+        </svg>
       </div>
     </div>
+    <p>${product.price} TL</p>
+  </div>
+`;
+
     <h3>${product.title}</h3>
     <p>${product.price} TL</p>
   </div>
