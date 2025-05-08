@@ -189,6 +189,7 @@ function submitAuth() {
 fetch("./products.json")
   .then(res => res.json())
   .then(products => {
+   console.log(products); // <<< BURAYI EKLE
     const lookbook = document.querySelector(".lookbook");
 
     products.forEach(product => {
