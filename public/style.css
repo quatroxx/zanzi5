@@ -188,20 +188,16 @@ main {
 }
 
 .slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
   display: flex;
+  width: 100%;
+  height: 100%;
   transition: transform 0.5s ease;
+  overflow: hidden;
 }
 
 .slide-item {
   flex: 0 0 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .slide-item img {
